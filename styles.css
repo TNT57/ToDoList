@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.todo-item {
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.todo-item.removing {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.todo-item.completed span {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+
+.filter-btn.active {
+    background-color: #3b82f6;
+    color: white;
+}
